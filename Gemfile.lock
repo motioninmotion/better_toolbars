@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    better_toolbar (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  better_toolbar!
+  rake
