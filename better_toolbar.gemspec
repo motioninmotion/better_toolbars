@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
-VERSION = "1.0"
+VERSION = "0.0.1"
 
 Gem::Specification.new do |spec|
   spec.name          = "better_toolbar"
   spec.version       = VERSION
   spec.authors       = ["Jack Dean Watson-Hamblin"]
   spec.email         = ["info@fluffyjack.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = ""
+  spec.description   = %q{A better way to work with toolbars}
+  spec.summary       = %q{More ruby like ways to work with UIToolbar and UIBarButtonItems}
+  spec.homepage      = "https://github.com/FluffyJack/better_toolbar"
+  spec.license       = "MIT"
 
   files = []
   files << 'README.md'
