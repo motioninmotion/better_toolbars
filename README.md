@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-In version 0.0.1, you can create a `UIBarButtonItem` using a nicer factory style (yes, factories make you think of Java, but the fact is factories are useful).
+In version 0.1.0, you can create a `UIBarButtonItem` using a nicer factory style (yes, factories make you think of Java, but the fact is factories are useful).
 
 ```ruby
 toolbar = UIToolbar.new
@@ -26,9 +26,9 @@ item = BetterToolbar::Item.create(title: "Item 1", target: the_target, action: '
 toolbar.setItems([item], animated: false)
 ```
 
-In later versions, the plan is to have a nicer factory for a whole toolbar, but this works well for now. A preview is it might look something like this though.
+### Full Toolbar
 
-**NOT REAL CODE**
+To create a complete toobar, you can specify defaults for the `Item` factory in the hash passed to `BetterToolbar#create`, and pass in everything else to the hashes in the `items` array.
 
 ```ruby
 toolbar = BetterToolbar.create({
@@ -36,13 +36,16 @@ toolbar = BetterToolbar.create({
   items: [
     { title: "Item 1", action: "item_one_pressed:" },
     { image: "sun", action: "sun_pressed:" },
-    :flexible_space,
     { title: "Item 3", target: different_target, action: "some_action:" }
   ]
 })
 ```
 
 That looks much nicer than what it would usually take to make a toolbar, and that's where it would be nice to get to.
+
+### Flexible Space
+
+Coming soon will be the ability to add `:flexible_space` as an item on it's own so that you can put some flexible space in there, along with other features like custom classes etc.
 
 ## Contributing
 
