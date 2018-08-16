@@ -6,7 +6,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.3.2)
+    rake (12.3.1)
 
 PLATFORMS
   ruby
@@ -14,3 +14,6 @@ PLATFORMS
 DEPENDENCIES
   better_toolbar!
   rake
+
+BUNDLED WITH
+   1.16.2
